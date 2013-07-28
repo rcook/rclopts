@@ -24,11 +24,11 @@ require 'rclopts'
 option_parser = Rclopts::RequiredArgOptionParser.new do |p|
   p.banner = "Usage: my-command-line-tool [options]"
 
-  p.on_required '-r VALUE', '--something-required VALUE', 'A required argument') do |o, value|
+  p.on_required '-r VALUE', '--something-required VALUE', 'A required argument' do |o, value|
     o.something_required = value
   end
 
-  p.on '-n VALUE', '--not-required VALUE', 'A not-required argument') do |o, value|
+  p.on '-n VALUE', '--not-required VALUE', 'A not-required argument' do |o, value|
     o.not_required = value
   end
 
