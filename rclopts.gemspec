@@ -6,7 +6,7 @@ require 'rclopts/gem_info'
 Gem::Specification.new do |s|
   s.name = 'rclopts'
   s.version = Rclopts::GemInfo.version_string
-  s.date = Date.today
+  s.date = Date.today rescue '1970-01-01'
   s.summary = 'rclopts'
   s.description = 'Ruby command-line helpers'
   s.license = 'MIT'
