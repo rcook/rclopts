@@ -1,5 +1,4 @@
-rclopts
-=======
+# rclopts [![Build status](https://travis-ci.org/rcook/rclopts.png)](https://travis-ci.org/rcook/rclopts)
 
 Ruby command-line helpers
 
@@ -56,5 +55,4 @@ the command line.
 
 # Licence
 
-_rgpg_ is released under the MIT licence.
-
+_rclopts_ is released under the MIT licence.
