@@ -1,4 +1,8 @@
-require_relative 'test_helper'
+if RUBY_VERSION < '1.9.0'
+  require File.expand_path('../test_helper', __FILE__)
+else
+  require_relative 'test_helper'
+end
 
 module RcloptsTest
   class RequiredArgOptionParserTest < Test::Unit::TestCase

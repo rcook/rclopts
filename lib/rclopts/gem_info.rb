@@ -1,7 +1,7 @@
 module Rclopts
   module GemInfo
     MAJOR_VERSION = 0
-    MINOR_VERSION = 0
+    MINOR_VERSION = 1
     PATCH_VERSION = 0
 
     def self.version_string
