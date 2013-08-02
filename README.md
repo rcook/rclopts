@@ -1,4 +1,4 @@
-# rclopts [![Build status](https://travis-ci.org/rcook/rclopts.png)](https://travis-ci.org/rcook/rclopts)
+# rclopts [![Install gem](https://badge.fury.io/rb/rclopts.png)](https://rubygems.org/gems/rclopts) [![Build status](https://travis-ci.org/rcook/rclopts.png)](https://travis-ci.org/rcook/rclopts)
 
 Ruby command-line helpers
 
