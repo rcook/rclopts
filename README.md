@@ -37,11 +37,9 @@ option_parser = Rclopts::RequiredArgOptionParser.new do |p|
   end
 end
 
-options = nil
-free_args = nil
 begin
   options, free_args = option_parser.process_args(ARGV)
-rescue RequiredArgOptionParser::RequiredArgOptionParserError => e
+rescue Rclopts::RequiredArgOptionParser::RequiredArgOptionParserError => e
   $stderr.puts e.message
   exit 1
 end
@@ -52,6 +50,33 @@ end
 This returns an `OpenStruct` instance `options` populated with values obtained
 from the command line and an array `free_args` of the free arguments passed on
 the command line.
+
+## `CliHelper` module
+
+This class encapsulates the standard behaviour of handling parser errors, displaying
+them
+
+This class encapsulates the standard behaviour of handling parser errors,
+displaying them via standard error and exiting with a nonzero return code.
+
+You can replace
+
+```ruby
+begin
+  options, free_args = option_parser.process_args(ARGV)
+rescue Rclopts::RequiredArgOptionParser::RequiredArgOptionParserError => e
+  $stderr.puts e.message
+  exit 1
+end
+```
+
+with
+
+```ruby
+options, free_args = Rclopts::CliHelper.process_args(option_parser, ARGV)
+```
+
+Easy!
 
 # Licence
 
