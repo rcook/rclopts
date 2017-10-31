@@ -53,9 +53,6 @@ the command line.
 
 ## `CliHelper` module
 
-This class encapsulates the standard behaviour of handling parser errors, displaying
-them
-
 This class encapsulates the standard behaviour of handling parser errors,
 displaying them via standard error and exiting with a nonzero return code.
 
